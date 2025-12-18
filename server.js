@@ -442,6 +442,9 @@ const io = socketio(server, {
     origin: [
       "http://localhost:3000",
       "https://frontendastro-1.onrender.com",
+   "https://astro-website-pi.vercel.app",
+   "https://frontend-astro-seven.vercel.app",
+       "https://astrobackend-5sr6.onrender.com",
     ],
     credentials: true,
   },
@@ -469,6 +472,9 @@ const allowedOrigins = [
   "http://localhost:3001",
   "http://localhost:3002",
   "https://frontendastro-1.onrender.com",
+   "https://astrobackend-5sr6.onrender.com",
+    "https://astro-website-pi.vercel.app",
+   "https://frontend-astro-seven.vercel.app",
 ];
 
 app.use(
