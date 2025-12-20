@@ -585,6 +585,10 @@ app.use("/api/our-clients", require("./routes/ourClientsRoutes"));
 app.use("/api/remedy-journey", require("./routes/remedyJourney.routes"));
 app.use("/api/experience", require("./routes/experienceRoutes"));
 app.use("/api/chat", require("./routes/chatRoutes"));
+app.use(
+  "/api/astrology-services",
+  require("./routes/astrologyServiceRoutes")
+);
 
 
 /* 🔔 ADMIN NOTIFICATIONS (Birthday / Anniversary) */
