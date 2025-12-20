@@ -444,7 +444,7 @@ const io = socketio(server, {
       "https://frontendastro-1.onrender.com",
    "https://astro-website-pi.vercel.app",
    "https://frontend-astro-seven.vercel.app",
-       https://astro-website-kappa-puce.vercel.app,
+       "https://astro-website-kappa-puce.vercel.app",
     ],
     credentials: true,
   },
