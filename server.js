@@ -828,7 +828,7 @@ app.use("/wallet", require("./routes/walletRoutes"));
 app.use("/bookings", require("./routes/bookingRoutes"));
 app.use("/user-reports", require("./routes/userReportRoutes"));
 
-app.use("/api/wealth", require("./routes/wealthRoutes"));
+// app.use("/api/wealth", require("./routes/wealthRoutes"));
 
 
 
