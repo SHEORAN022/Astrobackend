@@ -817,6 +817,21 @@ app.use("/api/chat", require("./routes/chatRoutes"));
 app.use("/api/astrology-services", require("./routes/astrologyServiceRoutes"));
 app.use("/api/admin-notifications", require("./routes/adminNotificationRoutes"));
 
+app.use("/api/userweb/auth", require("./routes/userwebAuthRoutes"));
+app.use("/api/userweb", require("./routes/userwebRoutes"));
+
+app.use("/api/numerology", require("./routes/numerologyRoutes"));
+app.use("/api/manglik", require("./routes/manglikRoute"));
+app.use("/api/compatibility", require("./routes/compatibility"));
+
+app.use("/wallet", require("./routes/walletRoutes"));
+app.use("/bookings", require("./routes/bookingRoutes"));
+app.use("/user-reports", require("./routes/userReportRoutes"));
+
+app.use("/api/wealth", require("./routes/wealthRoutes"));
+
+
+
 /* ======================================================
    HEALTH CHECK
 ====================================================== */
