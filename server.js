@@ -475,6 +475,7 @@ const allowedOrigins = [
    "https://astrobackend-5sr6.onrender.com",
     "https://astro-website-pi.vercel.app",
    "https://astro-website-kappa-puce.vercel.app",
+   "https://frontend-astro-seven.vercel.app",
 ];
 
 app.use(
