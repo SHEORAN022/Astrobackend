@@ -831,6 +831,7 @@ app.use("/api/compatibility", require("./routes/compatibility"));
 app.use("/wallet", require("./routes/walletRoutes"));
 app.use("/bookings", require("./routes/bookingRoutes"));
 app.use("/user-reports", require("./routes/userReportRoutes"));
+app.use("/api/remedy-journey", require("./routes/remedyJourney.routes"));
 
 // app.use("/api/wealth", require("./routes/wealthRoutes"));
 
