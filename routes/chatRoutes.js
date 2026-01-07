@@ -15,44 +15,32 @@
 
 // module.exports = router;
 
-const mongoose = require("mongoose");
+const express = require("express");
+const router = express.Router();
 
-const ChatSessionSchema = new mongoose.Schema(
-  {
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "UserWeb", // ✅ userWeb model
-      required: true,
-    },
+const {
+  startChat,
+  sendMessage,
+  getMyChats,
+  getChatById,
+  getAllChats,
+} = require("../controllers/chatController");
 
-    name: String,
-    gender: String,
-    dob: String,
-    tob: String,
-    pob: String,
-    intent: String,
-    problemType: String,
+const userWebAuth = require("../middleware/userwebAuthMiddleware");
+router.get("/all", getAllChats);
+/* ===============================
+   USERWEB ROUTES
+================================ */
 
-    messages: [
-      {
-        sender: {
-          type: String,
-          enum: ["user", "admin", "bot"],
-        },
-        text: String,
-        time: {
-          type: Date,
-          default: Date.now,
-        },
-      },
-    ],
+router.post("/start", userWebAuth, startChat);
+router.get("/my", userWebAuth, getMyChats);
+router.post("/send/:id", userWebAuth, sendMessage);
+router.get("/:id", userWebAuth, getChatById);
 
-    status: {
-      type: String,
-      default: "New",
-    },
-  },
-  { timestamps: true }
-);
+/* ===============================
+   ADMIN ROUTE
+================================ */
 
-module.exports = mongoose.model("ChatSession", ChatSessionSchema);
+
+
+module.exports = router;
