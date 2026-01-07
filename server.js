@@ -834,6 +834,32 @@ app.use("/user-reports", require("./routes/userReportRoutes"));
 app.use("/api/remedy-journey", require("./routes/remedyJourney.routes"));
 app.use("/api/discounts", require("./routes/discountRoutes"));
 // app.use("/api/wealth", require("./routes/wealthRoutes"));
+/* ================= SYSTEM / UTILITIES ================= */
+app.use("/api/search", require("./routes/searchRoutes"));
+app.use("/api/trigger", require("./routes/triggers"));
+
+/* ================= ADVANCED ASTROLOGY ================= */
+app.use("/api/transits", require("./routes/transitRoutes"));
+app.use("/api/dashas", require("./routes/dashaRoutes"));
+app.use("/api/zodiac", require("./routes/zodiacRoutes"));
+app.use("/api/nakshatra", require("./routes/nakshatraRoutes"));
+app.use("/api/planetary", require("./routes/planetaryRoutes"));
+app.use("/api/daily-predictions", require("./routes/dailyPredictionRoutes"));
+app.use("/api/horoscopes", require("./routes/horoscopeRoutes"));
+app.use("/api/panchang", require("./routes/panchangRoutes"));
+app.use("/api/prokerala", require("./routes/prokeralaRoutes"));
+
+/* ================= USER ACTIVITY / DEVICES ================= */
+app.use("/api/userweb/devices", require("./routes/deviceRoutes"));
+app.use("/api/userweb/activity", require("./routes/activityRoutes"));
+
+/* ================= WALLET / FINANCE ================= */
+app.use("/api/subscriptions", require("./routes/subscriptionRoutes"));
+app.use("/api/wealth", require("./routes/wealthRoutes"));
+
+/* ================= INFORMATIONAL ================= */
+app.use("/api/know-more", require("./routes/knowMoreRoutes"));
+
 
 
 
