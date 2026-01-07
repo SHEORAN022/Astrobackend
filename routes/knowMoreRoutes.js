@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const upload = require("../middlewares/uploadPdf");
+const upload = require("../middleware/uploadPdf");
 const controller = require("../controllers/knowMoreController");
 
 router.post("/", upload.single("pdf"), controller.createKnowMore);
