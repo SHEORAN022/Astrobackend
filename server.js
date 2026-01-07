@@ -833,7 +833,8 @@ app.use("/bookings", require("./routes/bookingRoutes"));
 app.use("/user-reports", require("./routes/userReportRoutes"));
 app.use("/api/remedy-journey", require("./routes/remedyJourney.routes"));
 
-// app.use("/api/wealth", require("./routes/wealthRoutes"));
+app.use("/api/wealth", require("./routes/wealthRoutes"));
+https://astrobackend-5sr6.onrender.com/api/discounts
 
 
 
