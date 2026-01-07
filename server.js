@@ -855,7 +855,7 @@ app.use("/api/userweb/activity", require("./routes/activityRoutes"));
 
 /* ================= WALLET / FINANCE ================= */
 app.use("/api/subscriptions", require("./routes/subscriptionRoutes"));
-app.use("/api/wealth", require("./routes/wealthRoutes"));
+// app.use("/api/wealth", require("./routes/wealthRoutes"));
 
 /* ================= INFORMATIONAL ================= */
 app.use("/api/know-more", require("./routes/knowMoreRoutes"));
