@@ -40,6 +40,13 @@ const userSchema = new mongoose.Schema(
       default: "member",
     },
 
+     wallet: {
+      balance: {
+        type: Number,
+        default: 0, // user ka wallet balance
+      },
+    },
+
     // ================= Relationship Intelligence =================
     dob: {
       type: Date, // 🎂 Birthday
