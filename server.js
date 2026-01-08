@@ -859,7 +859,7 @@ app.use("/api/subscriptions", require("./routes/subscriptionRoutes"));
 
 /* ================= INFORMATIONAL ================= */
 app.use("/api/know-more", require("./routes/knowMoreRoutes"));
-
+app.use("/api/affirmations", require("./routes/affirmationRoutes"));
 
 
 
