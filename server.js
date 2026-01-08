@@ -848,7 +848,7 @@ app.use("/api/daily-predictions", require("./routes/dailyPredictionRoutes"));
 app.use("/api/horoscopes", require("./routes/horoscopeRoutes"));
 app.use("/api/panchang", require("./routes/panchangRoutes"));
 app.use("/api/prokerala", require("./routes/prokeralaRoutes"));
-
+app.use("/api/user-wallet", require("./routes/userWallet.routes"));
 /* ================= USER ACTIVITY / DEVICES ================= */
 app.use("/api/userweb/devices", require("./routes/deviceRoutes"));
 app.use("/api/userweb/activity", require("./routes/activityRoutes"));
