@@ -681,7 +681,7 @@ const helmet = require("helmet");
 const compression = require("compression");
 const schedule = require("node-schedule");
 const Razorpay = require("razorpay");
-
+const accountRoutes = require("./routes/accountRoutes");
 const app = express();
 const server = http.createServer(app);
 
